@@ -3,19 +3,7 @@ import { env } from "./env";
 import express from "express";
 import conectaNaDataBase from "./config/dbConnect";
 
-async function iniciaADataBase(){
-        const conexao = await conectaNaDataBase()
-
-        conexao.on("error", (erro) => {
-            console.error("Falha ao iniciar ao conectar no Banco:", erro);
-        })
-
-        conexao.once("open", () => {
-            console.log("Banco de dados conectado com sucesso!")
-        })
-}
-
-iniciaADataBase();
+conectaNaDataBase();
 
 const app = express();
 
