@@ -5,9 +5,9 @@ const eventoSchema = new mongoose.Schema({
     horaInicio: { type: String, required: true },
     horaFim: { type: String, required: true},
     data:{ type: Date, required: true },
-    userId: { type: mongoose.Schema.Types.ObjectId, ref: "Users"}
+    userId: { type: mongoose.Schema.Types.ObjectId, ref: "users"}
 })
 
-const eventoModel = mongoose.model("Eventos", eventoSchema);
+const eventoModel = mongoose.model("eventos", eventoSchema);
 
 export default eventoModel;

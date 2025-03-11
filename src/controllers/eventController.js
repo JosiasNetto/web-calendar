@@ -47,6 +47,21 @@ const EventController = {
         }catch(error){
             res.status(500).json({mensagem: "Erro ao deletar evento", erro: error.message })
         }
+    },
+
+    async listEventsUser(req, res){
+        const userId = req.params.userId;
+
+        try {
+            const searchUser = await User.findById(userId).populate("eventos");
+            if(!searchUser){
+                throw new Error("Usuario não encontrado")
+            }
+
+            res.status(200).json({mensagem: "Lista de eventos encontrada", eventos:  searchUser.eventos})
+        }catch(error){
+            res.status(500).json({mensagem: "Erro ao listar eventos do Usuario", erro: error.message })
+        }
     }
 }
 

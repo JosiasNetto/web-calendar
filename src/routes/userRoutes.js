@@ -11,6 +11,8 @@ function routes(app){
     app.post("/login", UserController.loginUser);
     app.post("/:userId/evento", EventController.registerEvent);
 
+    app.get("/user/:userId/eventos", EventController.listEventsUser);
+
 
 }
 
