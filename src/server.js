@@ -1,8 +1,8 @@
-import dotenv from "dotenv"; dotenv.config();
-import { env } from "./env";
+import { env } from "./env.js";
 import express from "express";
-import conectaNaDataBase from "./config/dbConnect";
-import routes from "./routes/userRoutes";
+import conectaNaDataBase from "./config/dbConnect.js";
+import routes from "./routes/userRoutes.js";
+
 
 conectaNaDataBase();
 

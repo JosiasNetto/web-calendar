@@ -1,5 +1,5 @@
 import mongoose, { mongo } from "mongoose";
-import { env } from "../env";
+import { env } from "../env.js";
 
 
 async function conectaNaDataBase() {
