@@ -13,7 +13,7 @@ function routes(app){
 
     app.get("/user/:userId/eventos", EventController.listEventsUser);
 
-
+    app.put("/eventos/:eventId", EventController.updateEvent);
 }
 
 export default routes;
