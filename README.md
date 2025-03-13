@@ -10,6 +10,20 @@ Este repositório contém um site para gerenciamento de eventos no calendário, 
   - Exclua eventos.
   - Liste seus eventos.
   - Atualize eventos.
+ 
+## Fotos do Projeto
+### Tela Login
+![image](https://github.com/user-attachments/assets/95440801-9084-440d-a671-58ef5a1b5713)
+
+### Tela Cadastro
+![image](https://github.com/user-attachments/assets/367bde1c-af42-4e25-aa3b-348b85cfa776)
+
+### Tela Criação de Evento
+![image](https://github.com/user-attachments/assets/70c764d9-955e-4403-b4a2-779ec02fe6aa)
+
+### Tela Eventos
+![image](https://github.com/user-attachments/assets/9e74bc2d-f9a6-4548-91b7-a2fc6b40c680)
+
 
 ## Tecnologias Utilizadas
 
