@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 
 const eventoSchema = new mongoose.Schema({
+    nome: { type: String, required: true },
     descricao: { type: String, required: true },
     horaInicio: { type: String, required: true },
     horaFim: { type: String, required: true},
